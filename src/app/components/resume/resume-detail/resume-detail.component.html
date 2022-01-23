@@ -5,9 +5,32 @@
       <h2 class="text-2xl font-bold text-slate-500">
         Full Stack Web Developer
       </h2>
+
+      <span class="flex gap-2">
+        <fa-icon class="text-teal-400" [icon]="mapMarkerIcon"></fa-icon>
+        <span> Flower Mound, TX, USA </span>
+      </span>
+
+      <span class="flex gap-2">
+        <fa-icon class="text-teal-400" [icon]="birthdayCakeIcon"></fa-icon>
+        <span> {{ calculateAge() }} years old</span>
+      </span>
+
+      <span class="flex gap-2">
+        <fa-icon class="text-teal-400" [icon]="mugHotIcon"></fa-icon>
+        <span> {{ calculateExperience() }} years full-stack experience</span>
+      </span>
     </span>
 
-    <span class="text-slate-400"><a>Download as PDF</a></span>
+    <span class="text-slate-300"
+      ><a
+        class="hover:cursor-pointer border-dotted border-b border-teal-400"
+        href="../../../../assets/Jared_Anderson_Resume.pdf"
+        target="_blank"
+      >
+        Download as PDF</a
+      ></span
+    >
   </div>
 
   <!-- Professional Experience -->
