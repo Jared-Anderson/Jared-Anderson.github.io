@@ -1,17 +1,29 @@
 <div class="waves-container">
-  <app-navbar></app-navbar>
-
-  <div>
-    Hello, I'm Jared Anderson!
+  <div class="pr-3 pl-3 grid place-content-center pt-7 w-1/2 m-auto">
+    <span class="flex gap-5">
+      <fa-icon class="pr-2 pb-2 pt-2" [icon]="faceIcon" size="5x"></fa-icon>
+      <h2 class="text-2xl pt-3">Hello, I'm Jared Anderson!</h2>
+    </span>
+    <br />
     <p>
       I'm a full stack web developer with a passion for creating beautiful,
       responsive, and intuitive user experiences.
     </p>
-
-    <span class="flex justify-around">
+    <br />
+    <span class="flex justify-around p-3">
       <ul class="flex gap-4">
-        <li>Projects</li>
-        <li>Resume</li>
+        <li
+          class="hover:text-gray-200 text-purp hover:cursor-pointer rounded-3xl bg-slate-800 p-2 flex gap-2"
+        >
+          <fa-icon [icon]="projectIcon"></fa-icon> &nbsp;Projects
+        </li>
+        <li
+          routerLink="/resume"
+          class="hover:text-gray-200 text-black hover:cursor-pointer rounded-3xl bg-teal-500 p-2 flex gap-2"
+        >
+          <fa-icon [icon]="fileIcon"></fa-icon>
+          &nbsp;Resume
+        </li>
       </ul>
     </span>
   </div>
@@ -37,26 +49,4 @@
       <use xlink:href="#gentle-wave" x="48" y="7" fill="rgb(28,30,38)" />
     </g>
   </svg>
-
-  <!-- <svg
-    class="waves-move rotate-180"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    viewBox="0 24 150 28"
-    preserveAspectRatio="none"
-    shape-rendering="auto"
-  >
-    <defs>
-      <path
-        id="gentle-wave"
-        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-      />
-    </defs>
-    <g class="parallax">
-      <use xlink:href="#gentle-wave" x="48" y="0" fill="rgb(7, 100, 100, .7)" />
-      <use xlink:href="#gentle-wave" x="48" y="3" fill="rgb(7, 100, 100, .3)" />
-      <use xlink:href="#gentle-wave" x="48" y="5" fill="rgb(7, 100, 100, .1)" />
-      <use xlink:href="#gentle-wave" x="48" y="7" fill="rgb(7, 100, 100)" />
-    </g>
-  </svg> -->
 </div>

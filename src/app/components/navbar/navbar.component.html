@@ -1,1 +1,27 @@
-<p>navbar works!</p>
+<div class="flex gap-5 justify-between ml-3 mr-3">
+  <a class="hover:text-teal-400" routerLink="/home"> Jared Anderson </a>
+  <span>
+    <ul class="flex gap-5">
+      <li class="hover:text-teal-400 hover:cursor-pointer">
+        <a routerLink="/home"> Projects </a>
+      </li>
+      <li class="hover:text-teal-400">
+        <a class="hover:text-teal-400" routerLink="/resume">Resume</a>
+      </li>
+      <li class="hover:text-teal-400">
+        <a href="https://github.com/Jared-Anderson" target="_blank">
+          <fa-icon [icon]="githubIcon"></fa-icon>
+        </a>
+      </li>
+      <li>
+        <a
+          class="hover:text-teal-400"
+          href="https://www.linkedin.com/in/jared-anderson-321770102/"
+          target="_blank"
+        >
+          <fa-icon [icon]="linkedInIcon"></fa-icon>
+        </a>
+      </li>
+    </ul>
+  </span>
+</div>
