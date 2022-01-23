@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@mixin light-theme {
+  // #region Palette
+  --primary-color: #0ca4a5;
+  --primary-color-rgb: 12, 164, 165;
+  --primary-color-contrast: #ffffff;
+  --waves-color-start: rgba(var(--primary-color-rgb), 0.3);
+  --waves-color-end: rgba(var(--primary-color-rgb), 0.1);
+}
+
+@mixin dark-theme {
+  // #region Palette
+  --primary-color: #00c2c2;
+  --primary-color-rgb: 0, 194, 194;
+  --primary-color-contrast: #1c1e26;
+}
