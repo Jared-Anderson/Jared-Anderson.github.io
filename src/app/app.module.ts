@@ -8,6 +8,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ResumeComponent } from './components/resume/resume.component';
 import { HomeComponent } from './components/home/home.component';
+import { ResumeDetailComponent } from './components/resume/resume-detail/resume-detail.component';
+import { HeroComponent } from './components/hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { HomeComponent } from './components/home/home.component';
     WavesComponent,
     NavbarComponent,
     ResumeComponent,
-    HomeComponent
+    HomeComponent,
+    ResumeDetailComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,
