@@ -1,45 +1,212 @@
-<div class="flex flex-col">
-  <div class="flex justify-between items-center">
-    <span>
+<div>
+  <div class="flex flex-col p-5 bg-resumeBg ml-5 mr-5 rounded-xl">
+    <div>
       <h1 class="text-3xl font-bold text-teal-400">Jared Anderson</h1>
       <h2 class="text-2xl font-bold text-slate-500">
         Full Stack Web Developer
       </h2>
+      <div class="grid grid-cols-3 gap-1">
+        <div>
+          <span class="flex gap-2">
+            <fa-icon class="text-teal-400" [icon]="mapMarkerIcon"></fa-icon>
+            <span> Flower Mound TX, USA </span>
+          </span>
 
-      <span class="flex gap-2">
-        <fa-icon class="text-teal-400" [icon]="mapMarkerIcon"></fa-icon>
-        <span> Flower Mound, TX, USA </span>
-      </span>
+          <span class="flex gap-2">
+            <fa-icon class="text-teal-400" [icon]="birthdayCakeIcon"></fa-icon>
+            <span> {{ calculateAge() }} years old</span>
+          </span>
 
-      <span class="flex gap-2">
-        <fa-icon class="text-teal-400" [icon]="birthdayCakeIcon"></fa-icon>
-        <span> {{ calculateAge() }} years old</span>
-      </span>
+          <span class="flex gap-2">
+            <fa-icon class="text-teal-400" [icon]="mugHotIcon"></fa-icon>
+            <span> {{ calculateExperience() }} years experience</span>
+          </span>
 
-      <span class="flex gap-2">
-        <fa-icon class="text-teal-400" [icon]="mugHotIcon"></fa-icon>
-        <span> {{ calculateExperience() }} years full-stack experience</span>
-      </span>
-    </span>
+          <span class="flex gap-2">
+            <fa-icon class="text-teal-400" [icon]="commentDotIcon"></fa-icon>
+            <span> English</span>
+          </span>
+          <br />
+        </div>
 
-    <span class="text-slate-300"
-      ><a
-        class="hover:cursor-pointer border-dotted border-b border-teal-400"
-        href="../../../../assets/Jared_Anderson_Resume.pdf"
-        target="_blank"
-      >
-        Download as PDF</a
-      ></span
-    >
-  </div>
+        <div>
+          <div class="flex gap-2">
+            <fa-icon class="text-teal-400" [icon]="githubIcon"></fa-icon>
+            <a
+              class="hover:cursor-pointer border-dotted border-b border-teal-400"
+              href="https://github.com/Jared-Anderson"
+              target="_blank"
+              >Github Profile</a
+            >
+          </div>
+          <div class="flex gap-2">
+            <fa-icon class="text-teal-400" [icon]="linkedInIcon"></fa-icon>
+            <a
+              class="hover:cursor-pointer border-dotted border-b border-teal-400"
+              href="https://www.linkedin.com/in/jared-anderson-321770102/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </div>
+          <div class="flex gap-2">
+            <fa-icon class="text-teal-400" [icon]="envelopeIcon"></fa-icon>
+            <a
+              class="hover:cursor-pointer border-dotted border-b border-teal-400"
+              href="mailto:janderson1022@gmail.com"
+              >janderson1022@gmail.com</a
+            >
+          </div>
+          <div class="flex gap-2">
+            <fa-icon class="text-teal-400" [icon]="schoolIcon"></fa-icon>
+            <span>University of North Texas - 2017</span>
+          </div>
+        </div>
+        <span class="text-gray-300 flex justify-end">
+          <span>
+            <a
+              class="hover:cursor-pointer border-dotted border-b border-teal-400"
+              href="../../../../assets/Jared_Anderson_Resume.pdf"
+              target="_blank"
+            >
+              Download as PDF</a
+            ></span
+          >
+        </span>
+      </div>
+    </div>
 
-  <!-- Professional Experience -->
-  <div>
-    <h3 class="border-b-teal-400 border-b text-slate-300 text-xl">
-      Professional Experience
-    </h3>
+    <!-- About -->
+    <div>
+      <h3 class="border-b-teal-400 border-b text-gray-300 text-xl">About</h3>
+      <p class="text-gray-200">
+        I have a passion for building fast, responsive, visually pleasing UIs,
+        bringing great designs to reality and improving them as they are built.
+        I love learning new things and applying them practically in existing
+        services or completely new ones.
+      </p>
+      <br />
+    </div>
 
-    <div class="text-teal-400 text-lg">WebTPA</div>
-    <div class="text-teal-400 text-lg">City Of Denton</div>
+    <!-- Skills -->
+    <div>
+      <h3 class="border-b-teal-400 border-b text-gray-300 text-xl">Skills</h3>
+      <!-- Front End -->
+      <h2 class="text-gray-300 p-1">Front-end:</h2>
+      <div class="grid grid-cols-3 grid-row-3 gap-1">
+        <span
+          class="bg-primary border border-teal-300 text-teal-300 border-solid p-0.5 text-center"
+          >Angular</span
+        >
+        <span
+          class="bg-primary border border-teal-300 text-teal-300 border-solid p-0.5 text-center"
+          >TypeScript</span
+        >
+        <span
+          class="bg-primary border border-teal-300 text-teal-300 border-solid p-0.5 text-center"
+          >TailwindCSS</span
+        >
+        <span
+          class="bg-primary border border-teal-300 text-teal-300 border-solid p-0.5 text-center"
+          >SASS</span
+        >
+        <span
+          class="bg-primary border border-teal-300 text-teal-300 border-solid p-0.5 text-center"
+          >CSS Grid</span
+        >
+        <span
+          class="bg-primary border border-teal-300 text-teal-300 border-solid p-0.5 text-center"
+          >Flexbox</span
+        >
+        <span
+          class="bg-primary border border-teal-300 text-teal-300 border-solid p-0.5 text-center"
+          >React</span
+        >
+        <span
+          class="bg-primary border border-teal-300 text-teal-300 border-solid p-0.5 text-center"
+          >JavaScript</span
+        >
+        <span
+          class="bg-primary border border-teal-300 text-teal-300 border-solid p-0.5 text-center"
+          >Material UI</span
+        >
+      </div>
+      <br />
+
+      <!-- Back End -->
+      <h2 class="text-gray-300 p-1">Back-end:</h2>
+      <div class="grid grid-cols-3 grid-row-3 gap-1">
+        <span
+          class="bg-purple-900 border border-purple-400 text-purple-400 border-solid p-0.5 text-center"
+          >C#</span
+        >
+        <span
+          class="bg-purple-900 border border-purple-400 text-purple-400 border-solid p-0.5 text-center"
+          >.NET Core</span
+        >
+        <span
+          class="bg-purple-900 border border-purple-400 text-purple-400 border-solid p-0.5 text-center"
+          >IS4</span
+        >
+        <span
+          class="bg-purple-900 border border-purple-400 text-purple-400 border-solid p-0.5 text-center"
+          >Dapper</span
+        >
+        <span
+          class="bg-purple-900 border border-purple-400 text-purple-400 border-solid p-0.5 text-center"
+          >SQL Server</span
+        >
+        <span
+          class="bg-purple-900 border border-purple-400 text-purple-400 border-solid p-0.5 text-center"
+          >REST</span
+        >
+      </div>
+      <br />
+    </div>
+    <!-- Professional Experience -->
+    <div>
+      <h3 class="border-b-teal-400 border-b text-gray-300 text-xl">
+        Professional Experience
+      </h3>
+
+      <div>
+        <div class="text-teal-400 text-lg">WebTPA</div>
+        <div class="text-gray-400">
+          Full Stack Software Developer |
+          <fa-icon [icon]="mapMarkerIcon"></fa-icon> Irving, TX | August 2018 -
+          Present
+        </div>
+        <div>
+          <ul class="list-disc pl-6 text-gray-200">
+            <li>Converted VB6 enterprise-wide desktop app to a Web App.</li>
+            <li>
+              Implemented using Angular, TypeScript, SASS, Grid, Flexbox,
+              Material UI, Identity Server 4, and MS SQL Server.
+            </li>
+            <li>
+              Also developed, deployed and maintained stand-alone web apps for
+              clients using same stack.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br />
+      <div>
+        <div class="text-teal-400 text-lg">Denton Municipal Electric</div>
+        <div class="text-gray-400">
+          Front-end Developer |
+          <fa-icon [icon]="mapMarkerIcon"></fa-icon> Denton, TX | April 2017 -
+          October 2017
+        </div>
+        <div>
+          <ul class="list-disc pl-6 text-gray-200">
+            <li>
+              Developed front-end of on of Denton Municipal Electric's web apps
+              used in tracking the price of electricity.
+            </li>
+            <li>Used HTML, CSS, Bootstrap, and JavaScript</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

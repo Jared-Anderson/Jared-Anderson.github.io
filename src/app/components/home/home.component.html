@@ -1,7 +1,7 @@
-<app-hero></app-hero>
+<app-hero [showProjects]="showProjects"></app-hero>
 <app-waves></app-waves>
 <div class="flex flex-col items-center bg-drkGry w-full h-full pl-5 pr-5">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>
+  <app-resume id="app-resume"></app-resume>
+  <br />
+  <app-projects *ngIf="showProjects == true" id="app-projects"></app-projects>
 </div>

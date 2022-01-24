@@ -15,4 +15,9 @@ export class NavbarComponent implements OnInit {
     this.githubIcon = faGithub;
     this.linkedInIcon = faLinkedin;
   }
+
+  focusResume() {
+    let resumeComp = document.getElementById('app-resume');
+    resumeComp?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
 }

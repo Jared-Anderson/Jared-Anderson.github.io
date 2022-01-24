@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import {
   faAddressCard,
   faFileCode,
@@ -12,6 +12,7 @@ import {
   styleUrls: ['./hero.component.scss'],
 })
 export class HeroComponent implements OnInit {
+  @Input() showProjects: boolean = false;
   faceIcon: any;
   projectIcon: any;
   fileIcon: any;
@@ -30,5 +31,10 @@ export class HeroComponent implements OnInit {
   toggleHovered(value?: boolean) {
     if (value) this.hovered = value;
     else this.hovered = !this.hovered;
+  }
+
+  focusResume() {
+    let resumeComp = document.getElementById('app-resume');
+    resumeComp?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 }

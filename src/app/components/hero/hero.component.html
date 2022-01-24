@@ -1,6 +1,6 @@
 <div class="pr-3 pl-3 grid place-content-center pt-7 w-1/2 m-auto">
   <span class="flex justify-center items-center gap-5">
-    <fa-icon
+    <!-- <fa-icon
       (mouseenter)="toggleHovered(true)"
       *ngIf="hovered == false; else elseBlock"
       class="pr-2"
@@ -9,12 +9,16 @@
     ></fa-icon>
     <ng-template #elseBlock>
       <fa-icon
-        class="pr-2"
+        class="pr-2 text-secondary cursor-pointer"
         [icon]="faceIconHovered"
         size="5x"
         (mouseleave)="toggleHovered(false)"
       ></fa-icon
-    ></ng-template>
+    ></ng-template> -->
+    <img
+      class="w-32 h-32 rounded-full"
+      src="../../../assets/linkedin_profile.jpg"
+    />
     <span class="text-3xl">Hello, I'm Jared Anderson!</span>
   </span>
   <br />
@@ -23,19 +27,20 @@
     responsive, and intuitive user experiences.
   </p>
   <br />
-  <span class="flex justify-around p-3">
+  <span class="flex justify-around p-3" *ngIf="showProjects">
     <ul class="flex gap-4">
       <li
-        class="hover:text-gray-200 text-secondary hover:cursor-pointer rounded-3xl bg-slate-800 p-2 flex gap-2"
-      >
-        <fa-icon [icon]="projectIcon"></fa-icon><span>Projects</span>
-      </li>
-      <li
-        routerLink="/resume"
-        class="hover:text-gray-200 text-black hover:cursor-pointer rounded-3xl bg-teal-500 p-2 flex gap-2"
+        (click)="focusResume()"
+        class="hover:text-secondary text-slate-900 hover:cursor-pointer rounded-3xl bg-teal-400 p-2 flex gap-2"
       >
         <fa-icon [icon]="fileIcon"></fa-icon>
         <span> Resume </span>
+      </li>
+
+      <li
+        class="hover:text-secondary text-teal-400 hover:cursor-pointer rounded-3xl bg-slate-800 p-2 flex gap-2"
+      >
+        <fa-icon [icon]="projectIcon"></fa-icon><span>Projects</span>
       </li>
     </ul>
   </span>

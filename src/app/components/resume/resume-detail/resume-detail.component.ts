@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { faCalendar } from '@fortawesome/free-regular-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import {
   faBirthdayCake,
-  faLocationArrow,
+  faCommentDots,
   faMapPin,
   faMugHot,
+  faEnvelope,
+  faSchool,
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -16,6 +18,11 @@ export class ResumeDetailComponent implements OnInit {
   mapMarkerIcon = faMapPin;
   birthdayCakeIcon = faBirthdayCake;
   mugHotIcon = faMugHot;
+  commentDotIcon = faCommentDots;
+  githubIcon = faGithub;
+  linkedInIcon = faLinkedin;
+  envelopeIcon = faEnvelope;
+  schoolIcon = faSchool;
   constructor() {}
 
   ngOnInit(): void {}
@@ -30,7 +37,7 @@ export class ResumeDetailComponent implements OnInit {
 
   // function to calculate years of experience
   calculateExperience() {
-    const startDate = new Date('01/01/2018');
+    const startDate = new Date('01/01/2017');
     let experienceDifMs = Date.now() - startDate.getTime();
     let experienceDate = new Date(experienceDifMs);
     return Math.abs(experienceDate.getUTCFullYear() - 1970);
