@@ -1,10 +1,18 @@
 <div>
   <div class="flex flex-col p-5 bg-resumeBg ml-5 mr-5 rounded-xl">
     <div>
-      <h1 class="text-3xl font-bold text-teal-400">Jared Anderson</h1>
-      <h2 class="text-2xl font-bold text-slate-500">
-        Full Stack Web Developer
-      </h2>
+      <span class="flex gap-3 text-left items-center">
+        <img
+          class="w-32 h-32 rounded-full m-1"
+          src="../../../assets/linkedin_profile.jpg"
+        />
+        <span class="flex flex-col">
+          <h1 class="text-3xl font-bold text-teal-400">Jared Anderson</h1>
+          <h2 class="text-2xl font-bold text-slate-500">
+            Full Stack Web Developer
+          </h2>
+        </span>
+      </span>
       <div class="flex flex-col md:grid md:grid-cols-3 gap-1">
         <div>
           <span class="flex gap-2">
@@ -35,6 +43,7 @@
             <a
               class="hover:cursor-pointer border-dotted border-b border-teal-400"
               href="https://github.com/Jared-Anderson"
+              rel="noopener"
               target="_blank"
               >Github Profile</a
             >
@@ -44,6 +53,7 @@
             <a
               class="hover:cursor-pointer border-dotted border-b border-teal-400"
               href="https://www.linkedin.com/in/jared-anderson-321770102/"
+              rel="noopener"
               target="_blank"
               >LinkedIn</a
             >
@@ -93,41 +103,50 @@
       <!-- Front End -->
       <h2 class="text-gray-300 p-1">Front-end:</h2>
       <div class="grid grid-cols-3 grid-row-3 gap-1">
-        <span
-          class="bg-primary border border-teal-300 text-teal-300 border-solid p-0.5 text-center"
-          >Angular</span
+        <a
+          class="bg-primary border border-teal-300 text-teal-300 border-solid p-0.5 text-center hover:bg-purple-700"
+          href="https://angular.io/docs"
+          >Angular</a
         >
-        <span
-          class="bg-primary border border-teal-300 text-teal-300 border-solid p-0.5 text-center"
-          >TypeScript</span
+        <a
+          class="bg-primary border border-teal-300 text-teal-300 border-solid p-0.5 text-center hover:bg-purple-700"
+          href="https://www.typescriptlang.org/"
+          >TypeScript</a
         >
-        <span
-          class="bg-primary border border-teal-300 text-teal-300 border-solid p-0.5 text-center"
-          >TailwindCSS</span
+        <a
+          class="bg-primary border border-teal-300 text-teal-300 border-solid p-0.5 text-center hover:bg-purple-700"
+          href="https://tailwindcss.com/docs/font-family"
+          >TailwindCSS</a
         >
-        <span
-          class="bg-primary border border-teal-300 text-teal-300 border-solid p-0.5 text-center"
-          >SASS</span
+        <a
+          class="bg-primary border border-teal-300 text-teal-300 border-solid p-0.5 text-center hover:bg-purple-700"
+          href="https://sass-lang.com/"
+          >SASS</a
         >
-        <span
-          class="bg-primary border border-teal-300 text-teal-300 border-solid p-0.5 text-center"
-          >CSS Grid</span
+        <a
+          class="bg-primary border border-teal-300 text-teal-300 border-solid p-0.5 text-center hover:bg-purple-700"
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout"
+          >CSS Grid</a
         >
-        <span
-          class="bg-primary border border-teal-300 text-teal-300 border-solid p-0.5 text-center"
-          >Flexbox</span
+        <a
+          class="bg-primary border border-teal-300 text-teal-300 border-solid p-0.5 text-center hover:bg-purple-700"
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox"
+          >Flexbox</a
         >
-        <span
-          class="bg-primary border border-teal-300 text-teal-300 border-solid p-0.5 text-center"
-          >React</span
+        <a
+          class="bg-primary border border-teal-300 text-teal-300 border-solid p-0.5 text-center hover:bg-purple-700"
+          href="https://reactjs.org/"
+          >React</a
         >
-        <span
-          class="bg-primary border border-teal-300 text-teal-300 border-solid p-0.5 text-center"
-          >JavaScript</span
+        <a
+          class="bg-primary border border-teal-300 text-teal-300 border-solid p-0.5 text-center hover:bg-purple-700"
+          href="https://www.javascript.com/"
+          >JavaScript</a
         >
-        <span
-          class="bg-primary border border-teal-300 text-teal-300 border-solid p-0.5 text-center"
-          >Material UI</span
+        <a
+          class="bg-primary border border-teal-300 text-teal-300 border-solid p-0.5 text-center hover:bg-purple-700"
+          href="https://material.angular.io/"
+          >Angular Material UI</a
         >
       </div>
       <br />
@@ -135,29 +154,35 @@
       <!-- Back End -->
       <h2 class="text-gray-300 p-1">Back-end:</h2>
       <div class="grid grid-cols-3 grid-row-3 gap-1">
-        <span
-          class="bg-purple-900 border border-purple-400 text-purple-400 border-solid p-0.5 text-center"
-          >C#</span
+        <a
+          class="bg-purple-900 border border-purple-400 text-purple-400 border-solid p-0.5 text-center hover:bg-primary"
+          href="https://docs.microsoft.com/en-us/dotnet/csharp/"
+          >C#</a
         >
-        <span
-          class="bg-purple-900 border border-purple-400 text-purple-400 border-solid p-0.5 text-center"
-          >.NET Core</span
+        <a
+          class="bg-purple-900 border border-purple-400 text-purple-400 border-solid p-0.5 text-center hover:bg-primary"
+          href="https://docs.microsoft.com/en-us/dotnet/core/introduction"
+          >.NET Core</a
         >
-        <span
-          class="bg-purple-900 border border-purple-400 text-purple-400 border-solid p-0.5 text-center"
-          >IS4</span
+        <a
+          class="bg-purple-900 border border-purple-400 text-purple-400 border-solid p-0.5 text-center hover:bg-primary"
+          href="https://identityserver4.readthedocs.io/en/latest/"
+          >IS4</a
         >
-        <span
-          class="bg-purple-900 border border-purple-400 text-purple-400 border-solid p-0.5 text-center"
-          >Dapper</span
+        <a
+          class="bg-purple-900 border border-purple-400 text-purple-400 border-solid p-0.5 text-center hover:bg-primary"
+          href="https://dapperlib.github.io/Dapper/"
+          >Dapper</a
         >
-        <span
-          class="bg-purple-900 border border-purple-400 text-purple-400 border-solid p-0.5 text-center"
-          >SQL Server</span
+        <a
+          class="bg-purple-900 border border-purple-400 text-purple-400 border-solid p-0.5 text-center hover:bg-primary"
+          href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads"
+          >SQL Server</a
         >
-        <span
-          class="bg-purple-900 border border-purple-400 text-purple-400 border-solid p-0.5 text-center"
-          >REST</span
+        <a
+          class="bg-purple-900 border border-purple-400 text-purple-400 border-solid p-0.5 text-center hover:bg-primary"
+          href="https://en.wikipedia.org/wiki/Representational_state_transfer"
+          >REST</a
         >
       </div>
       <br />
@@ -177,14 +202,19 @@
         </div>
         <div>
           <ul class="list-disc pl-6 text-gray-200">
-            <li>Converted VB6 enterprise-wide desktop app to a Web App.</li>
-            <li>
-              Implemented using Angular, TypeScript, SASS, Grid, Flexbox,
-              Material UI, Identity Server 4, and MS SQL Server.
+            <li class="text-teal-400">
+              <span class="text-gray-200">
+                Develop, deploy and maintain stand-alone web apps for clients
+                using Angular, TypeScript, SASS, CSS Grid, Flexbox, Material UI,
+                Identity Server 4, and MS SQL Server.
+              </span>
             </li>
-            <li>
-              Developed, deployed and maintained stand-alone web apps for
-              clients using same stack.
+            <li class="text-teal-400">
+              <span class="text-gray-200">
+                Converted VB6 enterprise-wide desktop app to a Web App.
+                Implemented using Angular, TypeScript, SASS, CSS Grid, Flexbox,
+                Material UI, Identity Server 4, and MS SQL Server.
+              </span>
             </li>
           </ul>
         </div>
@@ -193,17 +223,23 @@
       <div>
         <div class="text-teal-400 text-lg">Denton Municipal Electric</div>
         <div class="text-gray-400">
-          Front-end Developer |
+          Front-end Developer - Contract |
           <fa-icon [icon]="mapMarkerIcon"></fa-icon> Denton, TX | April 2017 -
           October 2017
         </div>
         <div>
           <ul class="list-disc pl-6 text-gray-200">
-            <li>
-              Developed a front-end for Denton Municipal Electric to use in
-              tracking the price of electricity.
+            <li class="text-teal-400">
+              <span class="text-gray-200">
+                Developed a front-end for Denton Municipal Electric to use in
+                tracking the price of electricity.
+              </span>
             </li>
-            <li>Used HTML, CSS, Bootstrap, and JavaScript</li>
+            <li class="text-teal-400">
+              <span class="text-gray-200">
+                Used HTML, CSS, Bootstrap, and JavaScript
+              </span>
+            </li>
           </ul>
         </div>
       </div>
